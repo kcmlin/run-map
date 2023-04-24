@@ -2,7 +2,8 @@
 # Practice Mapping using Statebins
 #
 # Katherine Schaughency
-# 10 July 2021
+# Created: 10 July 2021
+# Updated: 23 April 2023
 # ----------------------------------- #
 # Reference: 
 # https://www.r-bloggers.com/2017/11/statebins-reimagined/
@@ -26,25 +27,21 @@ run.map <- USArrests %>%
               mutate(state = rownames(USArrests)) %>% 
               select(state) %>% 
               mutate(visit = case_when(state %in% c("Alabama",       
-                                                    "Arizona",      
-                                                    "Arkansas",      
+                                                    "Arizona",       
                                                     "Connecticut",   
                                                     "Florida",       
                                                     "Georgia",       
                                                     "Indiana",       
                                                     "Iowa",
-                                                    "Kansas",
                                                     "Louisiana",     
                                                     "Mississippi",   
                                                     "New Hampshire", 
                                                     "New Mexico",    
                                                     "North Dakota",  
-                                                    "Oklahoma",      
                                                     "Oregon",        
                                                     "South Dakota",  
                                                     "Tennessee",     
-                                                    "Vermont",       
-                                                    "Wisconsin") ~ "No",
+                                                    "Vermont") ~ "No",
                                        TRUE ~ "Yes"))
 
 # --------------------------------- #
