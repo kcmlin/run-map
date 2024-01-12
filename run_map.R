@@ -30,7 +30,6 @@ run.map <- USArrests %>%
                                                     "Arizona",       
                                                     "Connecticut",   
                                                     "Florida",       
-                                                    "Georgia",       
                                                     "Indiana",       
                                                     "Iowa",
                                                     "Louisiana",     
